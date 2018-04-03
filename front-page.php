@@ -69,9 +69,9 @@
 			<?php if($query->have_posts()) : while($query->have_posts()) : $query->the_post(); ?>
 				<div class="col-md-4 mobile-space">
 					<div class="border radius space background-white">
-						<h3 class="text-center text-uppercase"><?php the_title(); ?></h3>
+						<a href="<?php the_permalink(); ?>"><h3 class="text-center text-uppercase"><?php the_title(); ?></h3></a>
 						<?php the_excerpt(); ?>
-						<a href="" class="btn btn-custom text-uppercase center-block">text goes here</a>
+						<a href="<?php the_permalink(); ?>" class="btn btn-custom text-uppercase center-block">text goes here</a>
 					</div>
 				</div>
 			<?php endwhile; ?>
