@@ -28,7 +28,7 @@ add_filter('intermediate_image_sizes_advanced','remove_default_image_sizes');
 //insert styles
 function add_styles(){
 	wp_enqueue_style('bootstrap-style', get_template_directory_uri() . '/css/bootstrap.min.css');
-	wp_enqueue_style('style', get_template_directory_uri() . '/style.css');
+	wp_enqueue_style('style', get_stylesheet_uri() );
 	wp_enqueue_style('animate', get_template_directory_uri() . '/css/animate.css');
 	wp_enqueue_style('dropdown', get_template_directory_uri() . '/css/bootstrap-dropdownhover.min.css');
 	wp_enqueue_style('fontawesome-style', get_template_directory_uri() . '/css/fa-svg-with-js.css');
