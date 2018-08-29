@@ -18,17 +18,13 @@
 </head>
 <?php wp_head();?>
 <body>
-	<nav class="navbar navbar-default navbar-fixed-top" data-hover="dropdown" data-animations="fadeIn">
-		<div class="container">
-		    <div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand text-uppercase" href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" class="brand" alt="company logo"></a>
-		    </div>
+	<nav class="navbar fixed-top navbar-expand-md navbar-dark bg-dark border-bottom border-secondary">
+		<a class="navbar-brand text-uppercase" href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" class="brand" alt="company logo"></a>
+        <button class="navbar-toggler custom-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+            aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="container-fluid">
 	        <?php
 	            wp_nav_menu( array(
 	                'menu'              => 'main-nav',
@@ -36,8 +32,8 @@
 	                'depth'             => 2,
 	                'container'         => 'div',
 	                'container_class'   => 'collapse navbar-collapse',
-	                'container_id'      => 'navbar',
-	                'menu_class'        => 'nav navbar-nav navbar-right',
+					'container_id'      => 'collapsibleNavId',
+	                'menu_class'        => 'navbar-nav ml-auto',
 	                'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
 	                'walker'            => new WP_Bootstrap_Navwalker())
 	            );

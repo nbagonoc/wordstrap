@@ -1,4 +1,4 @@
-	<div class="footer background-dark space-sm">
+	<div class="footer bg-dark py-5">
 		<div class="container">
 			<div class="menu">
 				<div class="row">
@@ -16,13 +16,13 @@
 					</div>
 				</div><!-- END ROW -->
 			</div><!-- END FOOTERMENU -->
-			<hr class="hr-dark">
+			<hr class="border-top border-secondary">
 			<div class="social text-center">
 				<a href="#" target="_blank"><i class="fab fa-facebook-f fa-2x" data-fa-transform="shrink-5" data-fa-mask="fas fa-circle"></i></a>
 				<a href="#" target="_blank"><i class="fab fa-twitter fa-2x" data-fa-transform="shrink-5" data-fa-mask="fas fa-circle"></i></a>
 				<a href="#" target="_blank"><i class="fab fa-instagram fa-2x" data-fa-transform="shrink-5" data-fa-mask="fas fa-circle"></i></a>
 			</div>
-			<hr class="hr-dark">
+			<hr class="border-top border-secondary">
 			<div class="copyrights text-center">
 				&#9400; <?php echo date("Y"); ?> <?php bloginfo('name'); ?>
 			</div><!-- END FOOTERCOPYRIGHTS -->

@@ -1,0 +1,56 @@
+// extra small
+@media (max-width: 566px) {
+  .navbar {
+    @include navbar-mobile;
+  }
+  body {
+    padding-top: 51px;
+  }
+  .text-xl {
+    font-size: $xl/1.5 !important;
+  }
+  .carousel-control-prev,
+  .carousel-control-next {
+    display: none !important;
+  }
+}
+// small
+@media (min-width: 567px) {
+  .navbar {
+    @include navbar-mobile;
+  }
+  body {
+    padding-top: 51px;
+  }
+  .carousel-control-prev,
+  .carousel-control-next {
+    display: none !important;
+  }
+}
+// medium
+@media (min-width: 768px) {
+  .navbar {
+    @include navbar;
+  }
+  body {
+    padding-top: 76px;
+  }
+}
+// large
+@media (min-width: 992px) {
+  .navbar {
+    @include navbar;
+  }
+  body {
+    padding-top: 76px;
+  }
+}
+// extra large
+@media (min-width: 1200px) {
+  .navbar {
+    @include navbar;
+  }
+  body {
+    padding-top: 76px;
+  }
+}
