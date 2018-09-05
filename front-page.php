@@ -79,16 +79,15 @@
 </div><!-- /feature headings-->
 
 <!-- content and sidebar-->
-<div class="py-3">
-	<div class="container">
+	<div class="container my-5">
 		<div class="row">
 			<!-- content -->
-			<div class="col-md-8 mb-3 mb-md-0">
+			<div class="col-md-8 pr-md-1 mb-3">
 				<div class="card">
 					<div class="card-body">
 						<?php if(have_posts()) : while(have_posts()) : the_post(); ?>
 							<h2 class="text-uppercase"><?php the_title(); ?></h2>
-							<?php echo the_content(); ?>
+							<?php the_content(); ?>
 						<?php endwhile; ?>
 						<?php else: ?>
 						<?php endif; ?>
@@ -97,13 +96,12 @@
 				</div>
 			</div><!-- /content -->
 			<!-- sidebar -->
-			<div class="col-md-4 mb-3 mb-md-0">
+			<div class="col-md-4 mb-3">
 				<div class="sidebar sticky-top" data-offset-smart-dynamic>
 					<?php dynamic_sidebar('sidebar'); ?>
 				</div>
 			</div><!-- /sidebar -->
 		</div>
-	</div>
 </div><!-- content and sidebar -->
 
 <?php get_footer(); ?>
