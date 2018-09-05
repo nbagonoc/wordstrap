@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-	<div class="space-lg">
+	<div class="py-5">
 		<div class="container">
 			<div class="content text-center">
 				<h1>WHOOOPS! PAGE NOT FOUND.</h1>

@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-	<div class="space-lg">
+	<div class="py-4">
 		<div class="container">
 			<div class="search">
 				<h2 class="text-center">LOOKING FOR SOMETHING?</h2>
@@ -7,7 +7,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="space-bottom-lg">
+	<div class="pb-4">
 		<div class="container">		
 			<?php if(have_posts()) : while(have_posts()) : the_post(); ?>
 				<div class="search-result">
