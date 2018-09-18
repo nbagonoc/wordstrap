@@ -1,0 +1,28 @@
+@mixin cover {
+  background-repeat: no-repeat;
+  -moz-background-size: cover !important;
+  -webkit-background-size: cover !important;
+  -ms-background-size: cover !important;
+  -o-background-size: cover !important;
+  background-size: cover !important;
+}
+
+@mixin cover-settings {
+  height: 100%;
+  @include cover;
+}
+
+@mixin banner-settings {
+  height: 350px;
+  @include cover;
+}
+
+@mixin background-settings {
+  background-attachment: fixed;
+  @include cover;
+}
+
+@mixin card-img-settings {
+  background-position: center center;
+  @include cover;
+}

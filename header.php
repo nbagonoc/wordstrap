@@ -17,12 +17,13 @@
 	<link rel="icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico">
 </head>
 <?php wp_head();?>
-<body>
-	<nav class="navbar fixed-top navbar-expand-md navbar-dark bg-dark border-bottom border-secondary">
+<body id="top">
+<nav class="navbar navbar-a navbar-expand-md navbar-light bg-light py-0">
+	<div class="container">
 		<a class="navbar-brand text-uppercase" href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" class="brand" alt="company logo"></a>
-        <button class="navbar-toggler custom-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
-            aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler hidden-lg-up my-3" type="button" data-toggle="collapse" data-target="#navbar-a"
+                    aria-controls="navbar-a" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
 		</button>
 		<div class="container-fluid">
 	        <?php
@@ -32,11 +33,12 @@
 	                'depth'             => 2,
 	                'container'         => 'div',
 	                'container_class'   => 'collapse navbar-collapse',
-					'container_id'      => 'collapsibleNavId',
+					'container_id'      => 'navbar-a',
 	                'menu_class'        => 'navbar-nav ml-auto',
 	                'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
 	                'walker'            => new WP_Bootstrap_Navwalker())
 	            );
 	        ?>
 		</div>
-	</nav>
+	</div>
+</nav>

@@ -1,4 +1,16 @@
 $(document).ready(function() {
+  // add class to footer link
+  $(".menu-sidebar-container > ul").addClass("list-unstyled mb-0");
+  $(".menu-sidebar-container > ul > li").addClass("mb-2");
+  $(".menu-sidebar-container > ul > li > a").addClass(
+    "link-light text-capitalize text-sm"
+  );
+
+  // add class to sidebar
+  $(".sidebar > ul").addClass("list-group");
+  $(".sidebar > ul > li").addClass("list-group-item");
+  $(".sidebar > ul > li > a").addClass("d-block link-red");
+
   /*adds active class to the 1st child for banner slider*/
   $(".carousel-inner")
     .find(".carousel-item:first")
@@ -11,43 +23,55 @@ $(document).ready(function() {
     $this.toggleClass("opacity70");
   }
 
-  /*adds the animation class to trigger animate.css*/
-  $(".post-a")
-    .addClass("hide-animation")
+  // Animation
+  $(".slide-from-right")
+    .css("opacity", 0)
     .viewportChecker({
-      classToAdd: "view-animation animated fadeIn",
-      offset: 150
+      classToAdd: "animated fadeInRight",
+      offset: "30%"
     });
-  $(".post-b")
-    .addClass("hide-animation")
+  $(".slide-from-left")
+    .css("opacity", 0)
     .viewportChecker({
-      classToAdd: "view-animation animated flipInX",
-      offset: 150
+      classToAdd: "animated fadeInLeft",
+      offset: "30%"
     });
-  $(".post-c")
-    .addClass("hide-animation")
+  $(".fade-in")
+    .css("opacity", 0)
     .viewportChecker({
-      classToAdd: "view-animation animated bounceIn",
-      offset: 150
+      classToAdd: "animated fadeInUp",
+      offset: "30%"
     });
-  $(".post-d")
-    .addClass("hide-animation")
-    .viewportChecker({
-      classToAdd: "view-animation animated fadeInUp",
-      offset: 150
-    });
-  $(".post-e")
-    .addClass("hide-animation")
-    .viewportChecker({
-      classToAdd: "view-animation animated fadeInLeft",
-      offset: 150
-    });
-  $(".post-f")
-    .addClass("hide-animation")
-    .viewportChecker({
-      classToAdd: "view-animation animated fadeInRight",
-      offset: 150
-    });
+
+  // scroll to section
+  $(document).on("click", "a.page-scroll", function(event) {
+    var $anchor = $(this);
+    $("html, body")
+      .stop()
+      .animate(
+        {
+          scrollTop: $($anchor.attr("href")).offset().top
+        },
+        2000,
+        "easeInOutExpo"
+      );
+    event.preventDefault();
+  });
+
+  // Show/hide scroll to top button
+  window.onscroll = function() {
+    scrollFunction();
+  };
+  function scrollFunction() {
+    if (
+      document.body.scrollTop > 99 ||
+      document.documentElement.scrollTop > 99
+    ) {
+      $(".scroll-to-top").addClass("d-block");
+    } else {
+      $(".scroll-to-top").removeClass("d-block");
+    }
+  }
 
   //fix ie BUG on fixed-background CSS
   if (navigator.userAgent.match(/Trident\/7\./)) {
@@ -62,25 +86,4 @@ $(document).ready(function() {
       window.scrollTo(0, currentScrollPosition - wheelDelta);
     });
   }
-
-  // scroll to top
-  window.onscroll = function() {
-    scrollFunction();
-  };
-  // When the user scrolls down 100px from the top of the document, show the button
-  function scrollFunction() {
-    if (
-      document.body.scrollTop > 100 ||
-      document.documentElement.scrollTop > 100
-    ) {
-      document.getElementById("to-top").style.display = "block";
-    } else {
-      document.getElementById("to-top").style.display = "none";
-    }
-  }
-  // on click, scroll to top
-  $("a[href='#top']").click(function() {
-    $("html, body").animate({ scrollTop: 0 }, "slow");
-    return false;
-  });
 });

@@ -1,0 +1,27 @@
+// CAROUSEL
+.carousel-item {
+  height: 300px;
+  background-position: center center !important;
+  @include cover;
+}
+
+// change the color variable for the arrow buttons
+.carousel-control-next,
+.carousel-control-prev {
+  span {
+    color: $red;
+  }
+}
+
+// change the color variable for the indicators
+.carousel-indicators {
+  li {
+    background: rgba($red, 0.3);
+    &:hover {
+      background: $red;
+    }
+  }
+  .active {
+    background: $red;
+  }
+}

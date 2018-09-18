@@ -1,0 +1,68 @@
+.fa-stack {
+  &.fa-1x {
+    font-size: 1.2em !important;
+  }
+  &.fa-2x {
+    font-size: 1.5em !important;
+  }
+  &:hover > .fa-stack-red {
+    color: darken($red, 4) !important;
+  }
+  &:hover > .fa-stack-blue {
+    color: darken($blue, 5) !important;
+  }
+  &:hover > .fa-stack-green {
+    color: darken($green, 5) !important;
+  }
+  &:hover > .fa-stack-white {
+    color: darken($white, 5) !important;
+  }
+  &:hover > .fa-stack-light {
+    color: darken($light, 5) !important;
+  }
+  &:hover > .fa-stack-grey {
+    color: darken($grey, 5) !important;
+  }
+  &:hover > .fa-stack-dark-grey {
+    color: darken($dark-grey, 5) !important;
+  }
+  &:hover > .fa-stack-dark {
+    color: darken($dark, 5) !important;
+  }
+}
+
+@mixin footer-a-desktop {
+  .footer-a {
+    text-align: left;
+    .social-icons {
+      text-align: right;
+    }
+    .copyrights {
+      text-align: right;
+    }
+  }
+}
+
+@mixin footer-a-mobile {
+  .footer-a {
+    text-align: center;
+    .social-icons {
+      text-align: center;
+    }
+    .copyrights {
+      text-align: center;
+    }
+  }
+}
+
+@mixin footer-b-desktop {
+  .footer-b {
+    text-align: left;
+  }
+}
+
+@mixin footer-b-mobile {
+  .footer-b {
+    text-align: center;
+  }
+}

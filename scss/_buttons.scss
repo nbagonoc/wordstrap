@@ -1,0 +1,172 @@
+// BUTTONS
+.btn {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.btn-lg {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+// PILL
+.pill {
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+}
+
+// BOX
+.box {
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+}
+
+// STANDAR
+.btn-red {
+  background-color: $red;
+  color: $white;
+  &:hover {
+    background-color: darken($red, 10);
+    color: $white;
+  }
+}
+.btn-blue {
+  background-color: $blue;
+  color: $white;
+  &:hover {
+    background-color: darken($blue, 10);
+    color: $white;
+  }
+}
+.btn-green {
+  background-color: $green;
+  color: $white;
+  &:hover {
+    background-color: darken($green, 10);
+    color: $white;
+  }
+}
+.btn-white {
+  background-color: $white;
+  color: $dark-grey;
+  &:hover {
+    background-color: darken($white, 10);
+    color: $dark-grey;
+  }
+}
+.btn-light {
+  background-color: $light;
+  color: $dark-grey;
+  &:hover {
+    background-color: darken($light, 10);
+    color: $dark-grey;
+  }
+}
+.btn-grey {
+  background-color: $grey;
+  color: $white;
+  &:hover {
+    background-color: darken($grey, 10);
+    color: $white;
+  }
+}
+.btn-dark-grey {
+  background-color: $dark-grey;
+  color: $white;
+  &:hover {
+    background-color: darken($dark-grey, 10);
+    color: $white;
+  }
+}
+.btn-dark {
+  background-color: $dark;
+  color: $white;
+  &:hover {
+    background-color: lighten($dark, 10);
+    color: $white;
+  }
+}
+
+// OUTLINE
+.btn-outline-red {
+  border: 1px solid $red;
+  background-color: none;
+  color: $red;
+  &:hover {
+    border: 1px solid rgba($red, 0);
+    background-color: $red;
+    color: $white;
+  }
+}
+.btn-outline-blue {
+  border: 1px solid $blue;
+  background-color: none;
+  color: $blue;
+  &:hover {
+    border: 1px solid rgba($blue, 0);
+    background-color: $blue;
+    color: $white;
+  }
+}
+.btn-outline-green {
+  border: 1px solid $green;
+  background-color: none;
+  color: $green;
+  &:hover {
+    border: 1px solid rgba($green, 0);
+    background-color: $green;
+    color: $white;
+  }
+}
+.btn-outline-white {
+  border: 1px solid $white;
+  background-color: none;
+  color: $white;
+  &:hover {
+    border: 1px solid rgba($white, 0);
+    background-color: $white;
+    color: $dark;
+  }
+}
+.btn-outline-light {
+  border: 1px solid $light;
+  background-color: none;
+  color: $light;
+  &:hover {
+    border: 1px solid rgba($light, 0);
+    background-color: $light;
+    color: $dark;
+  }
+}
+.btn-outline-grey {
+  border: 1px solid $grey;
+  background-color: none;
+  color: $grey;
+  &:hover {
+    border: 1px solid rgba($grey, 0);
+    background-color: $grey;
+    color: $white;
+  }
+}
+.btn-outline-dark-grey {
+  border: 1px solid $dark-grey;
+  background-color: none;
+  color: $dark-grey;
+  &:hover {
+    border: 1px solid rgba($dark-grey, 0);
+    background-color: $dark-grey;
+    color: $white;
+  }
+}
+.btn-outline-dark {
+  border: 1px solid $dark;
+  background-color: none;
+  color: $dark;
+  &:hover {
+    border: 1px solid rgba($dark, 0);
+    background-color: $dark;
+    color: $white;
+  }
+}

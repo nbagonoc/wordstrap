@@ -1,0 +1,50 @@
+// extra small
+@media (max-width: 566px) {
+  @include navbar-a-mobile;
+  @include navbar-b-mobile;
+  .card-img-side {
+    height: 200px;
+  }
+  @include footer-a-mobile;
+  @include footer-b-mobile;
+}
+// small
+@media (min-width: 567px) {
+  @include navbar-a-mobile;
+  @include navbar-b-mobile;
+  .card-img-side {
+    height: 200px;
+  }
+  @include footer-a-mobile;
+  @include footer-b-mobile;
+}
+// medium
+@media (min-width: 768px) {
+  @include navbar-a-desktop;
+  @include navbar-b-desktop;
+  .card-img-side {
+    height: 100%;
+  }
+  @include footer-a-desktop;
+  @include footer-b-desktop;
+}
+// large
+@media (min-width: 992px) {
+  @include navbar-a-desktop;
+  @include navbar-b-desktop;
+  .card-img-side {
+    height: 100%;
+  }
+  @include footer-a-desktop;
+  @include footer-b-desktop;
+}
+// extra large
+@media (min-width: 1200px) {
+  @include navbar-a-desktop;
+  @include navbar-b-desktop;
+  .card-img-side {
+    height: 100%;
+  }
+  @include footer-a-desktop;
+  @include footer-b-desktop;
+}

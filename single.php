@@ -8,7 +8,7 @@
 					<div class="card">
 						<div class="card-body">
 							<?php if(have_posts()) : while(have_posts()) : the_post(); ?>
-							<h2 class="text-uppercase"><?php the_title(); ?></h2>
+							<h2 class="text-capitalize text-red"><?php the_title(); ?></h2>
 							<?php the_content(); ?>
 							<?php endwhile; ?>
 							<?php else: ?>
@@ -22,7 +22,8 @@
 					<div class="sidebar sticky-top" data-offset-smart-dynamic>
 						<?php dynamic_sidebar('sidebar'); ?>
 					</div>
-				</div><!-- /sidebar -->
+				</div>
+				<!-- /sidebar -->
 			</div>
 		</div>
 	</div>

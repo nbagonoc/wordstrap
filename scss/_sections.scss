@@ -1,0 +1,22 @@
+// CARD IMAGE TOP
+.card-img-top {
+  height: 200px;
+  @include card-img-settings;
+}
+
+// CARD IMAGE SIDE
+.card-img-side {
+  height: 100%;
+  @include card-img-settings;
+}
+
+// CARD IMAGE TEXT
+.card-img-text {
+  height: 350px;
+  @include card-img-settings;
+}
+
+// STICKY TOP
+.sticky-top {
+  top: 20px !important;
+}

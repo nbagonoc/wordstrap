@@ -1,0 +1,127 @@
+// color classes
+.text-red {
+  color: $red;
+}
+.text-blue {
+  color: $blue;
+}
+.text-green {
+  color: $green;
+}
+.text-white {
+  color: $white !important;
+}
+.text-light {
+  color: $light !important;
+}
+.text-grey {
+  color: $grey;
+}
+.text-dark-grey {
+  color: $dark-grey;
+}
+.text-dark {
+  color: $dark !important;
+}
+
+// color classes
+.link-red {
+  color: $red;
+  &:hover {
+    color: darken($red, 10);
+  }
+}
+.link-blue {
+  color: $blue;
+  &:hover {
+    color: darken($blue, 10);
+  }
+}
+.link-green {
+  color: $green;
+  &:hover {
+    color: darken($green, 10);
+  }
+}
+.link-white {
+  color: $white;
+  &:hover {
+    color: darken($white, 30);
+  }
+}
+.link-light {
+  color: $light;
+  &:hover {
+    color: darken($light, 20);
+  }
+}
+.link-grey {
+  color: $grey;
+  &:hover {
+    color: darken($grey, 10);
+  }
+}
+.link-dark-grey {
+  color: $dark-grey;
+  &:hover {
+    color: lighten($dark-grey, 20);
+  }
+}
+.link-dark {
+  color: $dark;
+  &:hover {
+    color: lighten($dark, 20);
+  }
+}
+
+// font size classes
+.text-xs {
+  font-size: $xs !important;
+}
+.text-sm {
+  font-size: $sm !important;
+}
+.text-md {
+  font-size: $md !important;
+}
+.text-lg {
+  font-size: $lg !important;
+}
+.text-xl {
+  font-size: $xl !important;
+}
+
+// VERTICAL ALIGN
+// vertical align with hight being % specified. May have problems with ie7
+.vertical-align {
+  display: table;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  .vertical-align-item {
+    display: table-cell;
+    vertical-align: middle;
+  }
+}
+
+// IMAGE SIZE
+.img-size-xs {
+  height: 75px;
+  width: 75px;
+}
+.img-size-sm {
+  height: 100px;
+  width: 100px;
+}
+.img-size-md {
+  height: 125px;
+  width: 125px;
+}
+.img-size-lg {
+  height: 150px;
+  width: 150px;
+}
+.img-size-xl {
+  height: 250px;
+  width: 250px;
+}

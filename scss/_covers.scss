@@ -1,0 +1,82 @@
+// COVER-A
+.cover-a {
+  background: -moz-linear-gradient(
+      to bottom,
+      rgba($dark, 0.5) 0%,
+      rgba($dark, 0.5) 100%
+    ),
+    url("../img/cover-a.jpg") center center;
+  background: -webkit-linear-gradient(
+      to bottom,
+      rgba($dark, 0.5) 0%,
+      rgba($dark, 0.5) 100%
+    ),
+    url("../img/cover-a.jpg") center center;
+  background: -ms-linear-gradient(
+      to bottom,
+      rgba($dark, 0.5) 0%,
+      rgba($dark, 0.5) 100%
+    ),
+    url("../img/cover-a.jpg") center center;
+  background: -o-linear-gradient(
+      to bottom,
+      rgba($dark, 0.5) 0%,
+      rgba($dark, 0.5) 100%
+    ),
+    url("../img/cover-a.jpg") center center;
+  background: linear-gradient(
+      to bottom,
+      rgba($dark, 0.5) 0%,
+      rgba($dark, 0.5) 100%
+    ),
+    url("../img/cover-a.jpg") center center;
+  background-attachment: scroll;
+  @include cover-settings;
+}
+
+// COVER-B
+.cover-b {
+  background: -moz-linear-gradient(
+      to bottom,
+      rgba($dark, 0.5) 0%,
+      rgba($dark, 0.5) 100%
+    ),
+    url("../img/cover-b.jpg") center center;
+  background: -webkit-linear-gradient(
+      to bottom,
+      rgba($dark, 0.5) 0%,
+      rgba($dark, 0.5) 100%
+    ),
+    url("../img/cover-b.jpg") center center;
+  background: -ms-linear-gradient(
+      to bottom,
+      rgba($dark, 0.5) 0%,
+      rgba($dark, 0.5) 100%
+    ),
+    url("../img/cover-b.jpg") center center;
+  background: -o-linear-gradient(
+      to bottom,
+      rgba($dark, 0.5) 0%,
+      rgba($dark, 0.5) 100%
+    ),
+    url("../img/cover-b.jpg") center center;
+  background: linear-gradient(
+      to bottom,
+      rgba($dark, 0.5) 0%,
+      rgba($dark, 0.5) 100%
+    ),
+    url("../img/cover-b.jpg") center center;
+  background-attachment: fixed;
+  @include cover-settings;
+}
+
+// COVER C
+.cover-c {
+  height: 100%;
+  .curtain {
+    position: relative;
+    z-index: 9;
+    height: 100%;
+    background: rgba($dark, 0.5);
+  }
+}
