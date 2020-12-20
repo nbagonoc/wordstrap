@@ -6,13 +6,13 @@
     font-size: 1.5em !important;
   }
   &:hover > .fa-stack-red {
-    color: darken($red, 4) !important;
+    color: darken($primary, 4) !important;
   }
   &:hover > .fa-stack-blue {
-    color: darken($blue, 5) !important;
+    color: darken($secondary, 5) !important;
   }
   &:hover > .fa-stack-green {
-    color: darken($green, 5) !important;
+    color: darken($tertiary, 5) !important;
   }
   &:hover > .fa-stack-white {
     color: darken($white, 5) !important;

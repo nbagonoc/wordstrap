@@ -25,26 +25,26 @@
 
 // STANDAR
 .btn-red {
-  background-color: $red;
+  background-color: $primary;
   color: $white;
   &:hover {
-    background-color: darken($red, 10);
+    background-color: darken($primary, 10);
     color: $white;
   }
 }
 .btn-blue {
-  background-color: $blue;
+  background-color: $secondary;
   color: $white;
   &:hover {
-    background-color: darken($blue, 10);
+    background-color: darken($secondary, 10);
     color: $white;
   }
 }
 .btn-green {
-  background-color: $green;
+  background-color: $tertiary;
   color: $white;
   &:hover {
-    background-color: darken($green, 10);
+    background-color: darken($tertiary, 10);
     color: $white;
   }
 }
@@ -91,32 +91,32 @@
 
 // OUTLINE
 .btn-outline-red {
-  border: 1px solid $red;
+  border: 1px solid $primary;
   background-color: none;
-  color: $red;
+  color: $primary;
   &:hover {
-    border: 1px solid rgba($red, 0);
-    background-color: $red;
+    border: 1px solid rgba($primary, 0);
+    background-color: $primary;
     color: $white;
   }
 }
 .btn-outline-blue {
-  border: 1px solid $blue;
+  border: 1px solid $secondary;
   background-color: none;
-  color: $blue;
+  color: $secondary;
   &:hover {
-    border: 1px solid rgba($blue, 0);
-    background-color: $blue;
+    border: 1px solid rgba($secondary, 0);
+    background-color: $secondary;
     color: $white;
   }
 }
 .btn-outline-green {
-  border: 1px solid $green;
+  border: 1px solid $tertiary;
   background-color: none;
-  color: $green;
+  color: $tertiary;
   &:hover {
-    border: 1px solid rgba($green, 0);
-    background-color: $green;
+    border: 1px solid rgba($tertiary, 0);
+    background-color: $tertiary;
     color: $white;
   }
 }
