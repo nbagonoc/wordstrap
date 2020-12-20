@@ -6,8 +6,11 @@
     display: none;
   }
   .navbar-brand {
-    img {
+    .brand {
       height: 62px;
+      width: 225px;
+      background: url("../img/logo.png") left center;
+      background-repeat: no-repeat;
     }
   }
   .navbar-nav {

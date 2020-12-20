@@ -20,7 +20,7 @@
 <body id="top">
 <nav class="navbar navbar-a navbar-expand-md navbar-light bg-light py-0">
 	<div class="container">
-		<a class="navbar-brand text-uppercase" href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" class="brand" alt="company logo"></a>
+		<a class="navbar-brand text-uppercase" href="<?php echo home_url(); ?>"><div class="brand"></div></a>
         <button class="navbar-toggler hidden-lg-up my-3" type="button" data-toggle="collapse" data-target="#navbar-a"
                     aria-controls="navbar-a" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
