@@ -2,7 +2,7 @@ const path = require('path');
 const extract = require('mini-css-extract-plugin');
 
 module.exports = {
-    entry: './app.js',
+    entry: './assets/scss/style.scss',
     output: {
         path: path.resolve(__dirname, 'css'),
         publicPath: ''
@@ -24,6 +24,7 @@ module.exports = {
                 test: /\.(jpg|jpeg|png|gif|svg)$/,
                 loader: 'file-loader',
                 options: {
+                    name: '[name].[ext]',
                     outputPath: '../img',
                 },
             }
