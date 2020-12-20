@@ -1,6 +1,6 @@
 // NAVBAR-A
 .navbar-a {
-  background: $red !important;
+  background: $primary !important;
   // Remove the dropdown carret
   .dropdown-toggle::after {
     display: none;
@@ -29,19 +29,19 @@
           padding: 0;
           margin-top: 0;
           border: 0;
-          border-left: 1px solid $red;
-          border-right: 1px solid $red;
+          border-left: 1px solid $primary;
+          border-right: 1px solid $primary;
           border-radius: 0;
           .dropdown-item {
-            background: lighten($red, 5);
+            background: lighten($primary, 5);
             color: rgba($white, 0.7);
             font-weight: 600;
             text-transform: capitalize;
             padding: 10px 25px;
-            border-bottom: 1px solid $red;
+            border-bottom: 1px solid $primary;
             &:hover,
             &.active {
-              background: $red;
+              background: $primary;
               color: $white;
             }
           }
@@ -69,7 +69,7 @@
         &.dropdown {
           .dropdown-menu {
             .dropdown-item {
-              background: $red;
+              background: $primary;
               padding: 10px 0 10px 20px;
               border-top: 1px solid rgba($white, 0.3);
             }
@@ -92,10 +92,10 @@
           .dropdown-menu {
             z-index: 99999;
             .dropdown-item {
-              background: lighten($red, 5);
+              background: lighten($primary, 5);
               padding: 10px 25px 10px 25px;
               border-top: none;
-              border-bottom: 1px solid $red;
+              border-bottom: 1px solid $primary;
             }
           }
           // make parent menu item active when hovering sub-items
@@ -141,10 +141,10 @@
         text-transform: uppercase;
         color: lighten($dark, 40);
         &:hover {
-          color: $green;
+          color: $tertiary;
         }
         &.active {
-          color: $green;
+          color: $tertiary;
         }
       }
       &.dropdown {
@@ -163,7 +163,7 @@
             border-top: 1px solid rgba($white, 0.3);
             &:hover,
             &.active {
-              color: $green;
+              color: $tertiary;
             }
           }
         }
@@ -177,7 +177,7 @@
     background: rgba($light, 1) !important;
     // custom Burger icon
     .navbar-toggler {
-      border-color: $green;
+      border-color: $tertiary;
       .navbar-toggler-icon {
         background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(90,193,82, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
       }
@@ -185,7 +185,7 @@
     .navbar-nav {
       .nav-item {
         .nav-link {
-          border-top: 1px solid rgba($green, 0.3);
+          border-top: 1px solid rgba($tertiary, 0.3);
           padding: 10px 0;
         }
         &.dropdown {
@@ -193,7 +193,7 @@
             .dropdown-item {
               background: $light;
               padding: 10px 0 10px 20px;
-              border-top: 1px solid rgba($green, 0.3);
+              border-top: 1px solid rgba($tertiary, 0.3);
             }
           }
         }
@@ -214,7 +214,7 @@
             .dropdown-menu {
               .dropdown-item {
                 background: rgba($light, 1) !important;
-                border-top: 1px solid rgba($green, 0.3);
+                border-top: 1px solid rgba($tertiary, 0.3);
               }
             }
           }
@@ -238,7 +238,7 @@
           }
           // make parent menu item active when hovering sub-items
           &:hover > .nav-link {
-            color: $green;
+            color: $tertiary;
           }
           // dropdown on hover
           &:hover > .dropdown-menu {

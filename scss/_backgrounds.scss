@@ -1,12 +1,12 @@
 // bg classes
-.bg-red {
-  background-color: $red;
+.bg-primary {
+  background-color: $primary;
 }
-.bg-blue {
-  background-color: $blue;
+.bg-secondary {
+  background-color: $secondary;
 }
-.bg-green {
-  background-color: $green;
+.bg-tertiary {
+  background-color: $tertiary;
 }
 .bg-white {
   background-color: $white !important;
@@ -28,35 +28,35 @@
 .bg-a {
   // height: 350px;
   height: auto;
-  background: -moz-linear-gradient(
-      to bottom,
-      rgba($dark, 0.5) 0%,
-      rgba($dark, 0.5) 100%
-    ),
-    url("../img/cover-a.jpg") center center;
-  background: -webkit-linear-gradient(
-      to bottom,
-      rgba($dark, 0.5) 0%,
-      rgba($dark, 0.5) 100%
-    ),
-    url("../img/cover-a.jpg") center center;
-  background: -ms-linear-gradient(
-      to bottom,
-      rgba($dark, 0.5) 0%,
-      rgba($dark, 0.5) 100%
-    ),
-    url("../img/cover-a.jpg") center center;
-  background: -o-linear-gradient(
-      to bottom,
-      rgba($dark, 0.5) 0%,
-      rgba($dark, 0.5) 100%
-    ),
-    url("../img/cover-a.jpg") center center;
-  background: linear-gradient(
-      to bottom,
-      rgba($dark, 0.5) 0%,
-      rgba($dark, 0.5) 100%
-    ),
-    url("../img/cover-a.jpg") center center;
+  // background: -moz-linear-gradient(
+  //     to bottom,
+  //     rgba($dark, 0.5) 0%,
+  //     rgba($dark, 0.5) 100%
+  //   ),
+  //   url("../img/placeholder-bg.jpg") center center;
+  // background: -webkit-linear-gradient(
+  //     to bottom,
+  //     rgba($dark, 0.5) 0%,
+  //     rgba($dark, 0.5) 100%
+  //   ),
+  //   url("../img/placeholder-bg.jpg") center center;
+  // background: -ms-linear-gradient(
+  //     to bottom,
+  //     rgba($dark, 0.5) 0%,
+  //     rgba($dark, 0.5) 100%
+  //   ),
+  //   url("../img/placeholder-bg.jpg") center center;
+  // background: -o-linear-gradient(
+  //     to bottom,
+  //     rgba($dark, 0.5) 0%,
+  //     rgba($dark, 0.5) 100%
+  //   ),
+  //   url("../img/placeholder-bg.jpg") center center;
+  // background: linear-gradient(
+  //     to bottom,
+  //     rgba($dark, 0.5) 0%,
+  //     rgba($dark, 0.5) 100%
+  //   ),
+  //   url("../img/placeholder-bg.jpg") center center;
   @include background-settings;
 }
