@@ -24,7 +24,7 @@
 }
 
 // STANDAR
-.btn-red {
+.btn-primary {
   background-color: $primary;
   color: $white;
   &:hover {
@@ -32,7 +32,7 @@
     color: $white;
   }
 }
-.btn-blue {
+.btn-secondary {
   background-color: $secondary;
   color: $white;
   &:hover {
@@ -40,7 +40,7 @@
     color: $white;
   }
 }
-.btn-green {
+.btn-tertiary {
   background-color: $tertiary;
   color: $white;
   &:hover {
@@ -90,7 +90,7 @@
 }
 
 // OUTLINE
-.btn-outline-red {
+.btn-outline-primary {
   border: 1px solid $primary;
   background-color: none;
   color: $primary;
@@ -100,7 +100,7 @@
     color: $white;
   }
 }
-.btn-outline-blue {
+.btn-outline-secondary {
   border: 1px solid $secondary;
   background-color: none;
   color: $secondary;
@@ -110,7 +110,7 @@
     color: $white;
   }
 }
-.btn-outline-green {
+.btn-outline-tertiary {
   border: 1px solid $tertiary;
   background-color: none;
   color: $tertiary;

@@ -1,11 +1,11 @@
 // color classes
-.text-red {
+.text-primary {
   color: $primary;
 }
-.text-blue {
+.text-secondary {
   color: $secondary;
 }
-.text-green {
+.text-tertiary {
   color: $tertiary;
 }
 .text-white {
@@ -25,19 +25,19 @@
 }
 
 // color classes
-.link-red {
+.link-primary {
   color: $primary;
   &:hover {
     color: darken($primary, 10);
   }
 }
-.link-blue {
+.link-secondary {
   color: $secondary;
   &:hover {
     color: darken($secondary, 10);
   }
 }
-.link-green {
+.link-tertiary {
   color: $tertiary;
   &:hover {
     color: darken($tertiary, 10);
